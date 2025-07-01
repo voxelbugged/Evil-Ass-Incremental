@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likely 206 bones - Evil Ass Incremental</title>
+    <!-- Begin favicon stuff -->
+    <link rel="icon" type="image/png" href="img/faves/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="img/faves/favicon.svg">
+    <link rel="shortcut icon" href="img/faves/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/faves/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <!-- End favicon stuff -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="good-logo">Evil Ass Incremental</h1>
+        <img src="img/evil_logo.png" id="evil-logo">
+    </div>
+    <div id="bone-info">
+        You have <b id="bones-counter">0</b> Evil Ass Bones.<br>
+        You are gaining <b id="bones-per-click">1</b> Evil Ass Bones per click (<b id="bones-per-second">0</b> per second).
+    </div>
+    <div id="infobox-container" class="container">
+        <h1>Evil Ass Information</h1>
+        <h3>Evil Ass Tombstone</h3>
+        The Evil Ass Tombstone increases your base bone gain by <b>1.</b><br>
+        Your base bone gain is currently <b id="base">1</b>.
+        <h3>Evil Ass Graveyard</h3>
+        The entire Evil Ass Graveyard increases your bone gain multiplier by <b>0.25</b>.<br>
+        Your bone gain multiplier is currently <b id="multiplier">1</b>.
+        <h3>Evil Ass Consensual Love-Making Building</h3>
+        This structure somehow increases your bone gain exponent by <b>0.025</b>.<br>
+        Your bone gain exponent is currently <b id="exponent">1</b>.
+        <h3>Evil Ass Doohickey</h3>
+        This thingamabob clicks automatically once every second. <b>Technologia ✨</b><br>
+        Your autoclick rate is currently <b id="autoclick">0</b>.
+        <h3>Evil Ass Evil</h3>
+        Increasing your evil level <b>doubles</b> your bone production.<br>
+        Your Evil Ass Multiplier is currently <b id="evil-multiplier">1</b>.<br>
+        Warning: May come with <b>Evil Ass Side Effects</b>.<br><br>
+        Hold <b>Shift</b> to Buy Max!
+    </div>
+    <div id="clickable-container" class="container">
+        <h1>Evil Ass Skull</h1>
+        <img src="img/evil_clickable.png" id="clickable" onclick="evil()">
+    </div>
+    <div id="upgrade-container" class="container">
+        <h1>Evil Ass Upgrades</h1>
+        <h3>Evil Ass Buildings</h3>
+        <div id="buy-tombstone" class="upgrade" onclick="buy('tombstone')">
+            <h4>Evil Ass Tombstone</h4>
+            Cost: <b id="tombstone-price">10</b> bones<br>
+            <b id="tombstone-amount">0</b> owned
+        </div>
+        <div id="buy-graveyard" class="upgrade" onclick="buy('graveyard')">
+            <h4>Evil Ass Graveyard</h4>
+            Cost: <b id="graveyard-price">250</b> bones<br>
+            <b id="graveyard-amount">0</b> owned
+        </div>
+        <div id="buy-building" class="upgrade" onclick="buy('building')">
+            <h4>Evil Ass Consensual Love-Making Building</h4>
+            Cost: <b id="building-price">2500</b> bones<br>
+            <b id="building-amount">0</b> owned
+        </div>
+        <h3>Evil Ass Contraptions</h3>
+        <div id="buy-gizmo" class="upgrade" onclick="buy('gizmo')">
+            <h4>Evil Ass Doohickey</h4>
+            Cost: <b id="gizmo-price">100</b> bones<br>
+            <b id="gizmo-amount">0</b> owned
+        </div>
+        <h3>Evil Ass Evil Ass</h3>
+        <div id="buy-evil" class="upgrade" onclick="buy('evil')">
+            <h4>Evil Ass Evil</h4>
+            Cost: <b id="evil-price">666</b> bones<br>
+            Level <b id="evil-amount">0</b>
+        </div>
+    </div>
+    <div id="footer">
+        <b>An Evil Ass Game by the Evil Ass voxelbugged - ver 666.0 - <a onclick="reset()">Reset Game</a></b>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@font-face
+{
+    font-family:'UnZialish';
+    src:url('fonts/UnZialish.ttf') format('truetype');
+}
+@font-face
+{
+    font-family:'Noto Serif';
+    src:url('fonts/NotoSerif-VariableFont_wdth\,wght.ttf') format('truetype');
+}
+body
+{
+    text-align: center;
+    text-shadow:2px 2px 2px black;
+    background:linear-gradient(#272736ff, #272736ff)/*, url(img/evil_background.jpg)*/;
+    background-size:cover;
+    font-size:125%;
+    color:white;
+    font-family:'Noto Serif';
+}
+a
+{
+    text-decoration: underline;
+}
+h1
+{
+    /*font-family:UnZialish;*/
+}
+#good-logo
+{
+    font-size:300%;
+}
+#clickable
+{
+    width:50%;
+}
+#clickable:hover
+{
+    filter:brightness(110%);
+    cursor:pointer;
+}
+#clickable:active
+{
+    transform:scale(0.95, 0.95);
+}
+#bone-info
+{
+    font-size:150%;
+}
+.container
+{
+    float:left;
+    width:33.33%;
+}
+hr
+{
+    border: 1px white solid;
+}
+.upgrade
+{
+    margin:auto;
+    margin-bottom:2%;
+    background-size:cover;
+    background:linear-gradient(#eb564bff, #b0305cff), url(img/evil_upgrade_background.png);
+    background-size:cover;
+    width:80%;
+    border-radius:10px;
+    box-shadow:2px 2px 2px transparent;
+    user-select:none;
+}
+.purchasable
+{
+    background:linear-gradient(#8fde5dff, #3ca370ff), url(img/evil_upgrade_background.png);
+    cursor:pointer;
+}
+.upgrade:hover
+{
+    filter:brightness(110%);
+}
+.hidden
+{
+    display:none;
+}
+.fontful
+{
+    font-family:UnZialish;
+}
+b
+{
+    /*font-family:UnZialish;*/
+}
+h4
+{
+    margin:0;
+}
+#evil-logo
+{
+    max-width:100%;
+    height:auto;
+}
+#footer
+{
+    width:100%;
+    clear:both;
+    position:fixed;
+    bottom:1%;
+}
