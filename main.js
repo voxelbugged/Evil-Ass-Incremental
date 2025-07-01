@@ -74,7 +74,7 @@ function updateUpgrades() {
 function updateInfobox() {
     document.getElementById("base").innerHTML = format(1 + items.tombstone.amount);
     document.getElementById("multiplier").innerHTML = format(1 + (items.graveyard.amount * 0.25));
-    document.getElementById("exponent").innerHTML = format(1 + items.building.amount * 0.25);
+    document.getElementById("exponent").innerHTML = format(1 + items.building.amount * 0.025);
     document.getElementById("autoclick").innerHTML = format(items.gizmo.amount);
     document.getElementById("evil-multiplier").innerHTML = format(2**items.evil.amount);
 }
